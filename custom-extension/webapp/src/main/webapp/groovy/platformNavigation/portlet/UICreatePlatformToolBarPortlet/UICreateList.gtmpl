@@ -34,6 +34,8 @@ JavascriptManager jsmanager = rcontext.getJavascriptManager();
 		<%
 			def extensions = uicomponent.getExtensions();
 			for (def ext : extensions) {
+			    def name = ext.getName();
+			    if(name.equals("poll") || name.equals("topic")) continue;
 				def actionLabel = _ctx.appRes("UIUserPlatformToolBarCreatePortlet.label." + ext.getName());
 			%>
 				<li>
