@@ -96,7 +96,7 @@
                 var jsonPlatformInfo = jQuery.parseJSON(myresponseText);
                 htmlContent += "v"
                 htmlContent += jsonPlatformInfo.platformVersion;
-                htmlContent += " - 构建 "
+                htmlContent += " - \u6784\u5EFA "
                 htmlContent += jsonPlatformInfo.platformBuildNumber;
             }else{
                 htmlContent += "4.3.1"
