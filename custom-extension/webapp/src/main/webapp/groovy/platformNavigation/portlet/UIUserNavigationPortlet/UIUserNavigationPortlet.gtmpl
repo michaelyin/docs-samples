@@ -46,7 +46,10 @@
     %>
 
     <% if  ((node.equals(uicomponent.DASHBOARD_URI) || node.equals(uicomponent.NOTIFICATION_SETTINGS))&&(!isOwner))  continue; 
-       if  (node.equals(uicomponent.DASHBOARD_URI)) continue;
+       if  (node.equals(uicomponent.DASHBOARD_URI)) {
+              i++;
+              continue;
+       }
        nodeLabel = _ctx.appRes(str);
     %>
 
